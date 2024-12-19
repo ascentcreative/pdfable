@@ -1,0 +1,28 @@
+{
+  "name": "ascentcreative/pdfable",
+  "description": "Library for creating PDFs from models",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Ascent Creative",
+      "email": "info@ascent-creative.co.uk"
+    }
+  ],
+  "require": {
+    "doctrine/dbal": "^3.0",
+    "carlos-meneses/laravel-mpdf": "^2.1",
+    "mpdf/mpdf": "^8.1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AscentCreative\\Pdfable\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+        "providers": [
+            "AscentCreative\\Pdfable\\PdfableServiceProvider"
+        ]
+    }
+}
+}

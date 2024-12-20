@@ -20,7 +20,7 @@ trait Pdfable {
         
         $config = [
             'title' => $title,
-            // 'margin_footer' => 5,
+            'margin_footer' => 5,
         ];
         $config = array_merge($config, $cfg);
 
